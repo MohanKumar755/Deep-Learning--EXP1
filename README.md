@@ -14,33 +14,33 @@ Regression problems involve predicting a continuous output variable based on inp
 
 ## DESIGN STEPS
 
-**STEP 1: Generate Dataset**
+STEP 1: Generate Dataset
 Create input values from 1 to 50 and add random noise to introduce variations in output values .
 
-**STEP 2: Initialize the Neural Network Model**
+STEP 2: Initialize the Neural Network Model
 Define a simple linear regression model using torch.nn.Linear() and initialize weights and bias values randomly.
 
-**STEP 3: Define Loss Function and Optimizer**
+STEP 3: Define Loss Function and Optimizer
 Use Mean Squared Error (MSE) as the loss function and optimize using Stochastic Gradient Descent (SGD) with a learning rate of 0.001.
 
-**STEP 4: Train the Model**
+STEP 4: Train the Model
 Run the training process for 100 epochs, compute loss, update weights and bias using backpropagation.
 
-**STEP 5: Plot the Loss Curve**
+STEP 5: Plot the Loss Curve
 Track the loss function values across epochs to visualize convergence.
 
-**STEP 6: Visualize the Best-Fit Line**
+STEP 6: Visualize the Best-Fit Line
 Plot the original dataset along with the learned linear model.
 
-**STEP 7: Make Predictions**
+STEP 7: Make Predictions
 Use the trained model to predict for a new input value .
 
 ## PROGRAM
 
-**Name:** KISHORE M
+Name: Mohakumar S
 
-**Register Number:** 2305002012
-```
+Register Number: 2305002014
+
 from google.colab import auth
 import gspread
 from google.auth import default
@@ -91,30 +91,30 @@ model.evaluate(X_test1,y_test)
 X_n1=[[4]]
 X_n1_1=Scaler.transform(X_n1)
 model.predict(X_n1_1)
-```
 
 
-**Dataset Information**
+
+Dataset Information
 
 <img width="538" height="453" alt="image" src="https://github.com/user-attachments/assets/1ac233e8-8c4e-4e77-bad1-ec660cc616ce" />
 
 
 ## OUTPUT
 
-**Training Loss Vs Iteration Plot:**
+Training Loss Vs Iteration Plot:
 
 <img width="560" height="413" alt="image" src="https://github.com/user-attachments/assets/9821da4c-c9c7-42fc-ac31-78e0649353e5" />
 
 
-**Epoch Training:**
+Epoch Training:
 
 <img width="1032" height="337" alt="image" src="https://github.com/user-attachments/assets/9e105828-173a-4026-a8d0-51d9587adb65" />
 
-**Test Data Root Mean Squared Error:**
+Test Data Root Mean Squared Error:
 
 <img width="768" height="66" alt="image" src="https://github.com/user-attachments/assets/c02b40d8-1760-4ef5-8898-adc106362c2d" />
 
-**New Sample Data Prediction:**
+New Sample Data Prediction:
 
 <img width="641" height="65" alt="image" src="https://github.com/user-attachments/assets/5deb473c-7c52-425e-bab7-64684d0e621e" />
 
